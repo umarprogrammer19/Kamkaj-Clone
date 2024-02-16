@@ -1,0 +1,829 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(173, 216, 230, 0.192);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgba(173, 216, 230, 0.192);
+    height: 5em;
+    /* position: sticky; */
+    /* top: 0%; */
+}
+header ul{
+    margin-top: 0.5em;
+}
+header li{
+    display: inline;
+    margin: 0.6em;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+header li:hover{
+    text-decoration: underline;
+    /* line-height: 3px; */
+}
+header>.second>ul>li>a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+header .a>li>a{
+    background-color: orangered;
+    padding: 0.6em;
+    border-radius: 50%;
+}
+header i{
+    font-size: 1em;
+    rotate: -5deg;
+}
+header i:hover{
+    text-decoration: underline;
+}
+header h1{
+    color: orangered;
+    font-size: 2.5em;
+}
+header>.first>h1>span{
+    color: black;
+}
+header>.first{
+    position: relative;
+    margin-right: 19em;
+}
+header h5{
+    font-size: 0.9em;
+    font-weight: 700;
+    position: absolute;
+    top: 2.5em;
+    padding-left: 0.5em;
+}
+.body1{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    position: relative;
+    margin-top: 2em;
+}
+.body1>.left>span>h1{
+    font-family: system-ui;
+    font-size: 3.2em;
+    padding-top:1em ;
+}
+.body1>.left>h1{
+    font-family: system-ui;
+    font-size: 3.2em;
+    margin-bottom: 0.3em;    
+}
+.body1>.left>span>h1>span{
+    color: orangered;
+}
+.body1>.left>p{
+    font-family: sans-serif;
+}
+.body1>.left>.search{
+    position: relative;
+    box-shadow: 3px 6px 15px black;
+    margin-top: 1.5em;
+    height: 2.9em;
+    width: 32.4em;
+    border-radius: 5px;
+}
+.body1>.left>.search>select{
+    width: 9em;
+    height: 3.4em;
+    padding: 0.6em;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    /* margin-top: 1.5em; */
+    /* box-shadow: 3px 6px 15px black; */
+}
+.body1>.left>.search>input{
+    width: 30em;
+    height: 3.4em;
+    border: none;
+    margin: -5px;
+    padding: 1em;
+    border-radius: 0px 5px 5px 0px;
+    /* box-shadow: 3px 6px 15px black; */
+}
+.body1>.left>.search>i{
+    position: absolute;
+    top: 0.6em;
+    left: 23em;
+    font-size: 1.3em;
+}
+.body1>.right{
+    background-color:black;
+    width: 23em;
+    max-height: 30em;
+    position: relative;
+    padding: 20px 20px 20px 20px ;
+    border-radius: 10px;
+}
+.body1>.right>.form>h2{
+    text-align: center;
+    color: white;
+    font-size: 2.3em;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.body1>.right>.form>input[type=text]{
+    width: 24em;
+    height: 2.8em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.body1>.right>.form>input[type=text]:focus{
+    border: 2px solid orangered;
+}
+.body1>.right>.form>input[type=number]{
+    width: 24em;
+    height: 2.8em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.body1>.right>.form>input[type=number]:focus{
+    border: 2px solid orangered;
+}
+.body1>.right>.form>select{
+    background-color: white;
+    width: 24em;
+    height: 2.8em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.body1>.right>.form>select:focus{
+    border: 2px solid orangered;
+}
+.body1>.right>.form>button{
+    background-color: orangered;
+    width: 13.5em;
+    height: 2.2em;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 10px;
+    animation:  ani 1s linear infinite;
+}
+.body2{
+    font-family: arial;
+    margin-top: 5em;
+}
+.body2>h1{
+    text-align: center;
+   font-size: 2.5em; 
+}
+.body2>p{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.body2>.cards img{
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+.body2>.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+    height: 10em;
+}
+.body2>.cards>.card{
+    border: 1px solid gray;
+    height: 9.1em;
+    width: 8.5em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1.5em;
+    transition: 0.5s ;
+}
+.body2>.cards>.card:hover{
+    background-color: rgba(211, 211, 211, 0.493);
+}
+.body3{
+    font-family: arial;
+    margin-top: 3em;
+}
+.body3>h1{
+    text-align: center;
+   font-size: 2.2em; 
+}
+.body3>p{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.body3>.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    height: 68em;
+    width: 84.3em;
+    /* background-color: aqua; */
+    /* margin-top: 5em; */
+}
+.body3>.cards>.card1{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+}
+.body3>.cards>.card2{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 4em;
+    position: relative;
+}
+.body3>.cards>.card3{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+}
+.body3>.cards>.card4{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 4em;
+    position: relative;
+}
+.body3>.cards img{
+    width: 16.5em;
+    height: 18.6em;
+    border-radius: 20px;
+    filter: contrast(70%);
+    /* padding: 10px; */
+    z-index: -1;
+}
+.body3>.cards button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 18em;
+    height: 3em;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.body3>.cards button:hover{
+    background-color: orangered;
+}
+.body3>.cards>.card1>.card1-1>h2:nth-child(2){
+    position: absolute;
+    top: 50px;
+    left: 32px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-1>h2:nth-child(3){
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-1>button{
+    position: absolute;
+    top: 240px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-1:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card1>.card1-2>h2:nth-child(2){
+    position: absolute;
+    top: 395px;
+    left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-2>h2:nth-child(3){
+    position: absolute;
+    top: 430px;
+    left: 23px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-2>button{
+    position: absolute;
+    top: 570px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-2:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card1>.card1-3>h2:nth-child(2){
+    position: absolute;
+    top: 770px;
+    left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-3>button{
+    position: absolute;
+    top: 67.8em;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card1>.card1-3:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card2>.card2-1>h2:nth-child(2){
+    position: absolute;
+    top: 50px;
+    left: 32px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-1>button{
+    position: absolute;
+    top: 240px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-1:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card2>.card2-2>h2:nth-child(2){
+    position: absolute;
+    top: 395px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-2>h2:nth-child(3){
+    position: absolute;
+    top: 430px;
+    left: 65px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-2>h2:nth-child(4){
+    position: absolute;
+    top: 460px;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-2>button{
+    position: absolute;
+    top: 570px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-2:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card2>.card2-3>h2:nth-child(2){
+    position: absolute;
+    top: 770px;
+    left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-3>button{
+    position: absolute;
+    top: 67.8em;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card2>.card2-3:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card3>.card3-1>h2:nth-child(2){
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-1>h2:nth-child(3){
+    position: absolute;
+    top: 93px;
+    left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-1>button{
+    position: absolute;
+    top: 240px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-1:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card3>.card3-2>h2:nth-child(2){
+    position: absolute;
+    top: 395px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-2>h2:nth-child(3){
+    position: absolute;
+    top: 430px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-2>button{
+    position: absolute;
+    top: 570px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-2:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card3>.card3-3>h2:nth-child(2){
+    position: absolute;
+    top: 750px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-3>button{
+    position: absolute;
+    top: 67.8em;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card3>.card3-3:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card4>.card4-1>h2:nth-child(2){
+    position: absolute;
+    top: 50px;
+    left: 32px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-1>h2:nth-child(3){
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-1>button{
+    position: absolute;
+    top: 240px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-1:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card4>.card4-2>h2:nth-child(2){
+    position: absolute;
+    top: 395px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-2>h2:nth-child(3){
+    position: absolute;
+    top: 430px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-2>button{
+    position: absolute;
+    top: 570px;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-2:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body3>.cards>.card4>.card4-3>h2:nth-child(2){
+    position: absolute;
+    top: 730px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-3>h2:nth-child(3){
+    position: absolute;
+    top: 25.5em;
+    left: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-3>button{
+    position: absolute;
+    top: 68em;
+    left: 11px;
+    font-weight: 700;
+}
+.body3>.cards>.card4>.card4-3:hover{
+    box-shadow: 0px 0px 40px rgb(75, 75, 75);
+    border-radius: 15px;
+}
+.body4{
+    font-family: sans-serif;
+    padding-top: 4em;
+    background-color: white;
+}
+.body4>.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    position: relative;
+}
+.body4>h1{
+    text-align: center;
+   font-size: 2.2em; 
+}
+.body4>p{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+.body4>.cards img{
+    height: 16em;
+    width: 23.5em;
+    border-radius: 15px;
+    /* position: relative; */
+    /* z-index: -1; */
+}
+.body4>.cards>.card1>i{
+    font-size: 2.8em;
+    position: absolute;
+    top: 2.5em;   
+    left: 5.4em;
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+}
+.body4>.cards>.card2>i{
+    font-size: 2.8em;
+    position: absolute;
+    top: 2.5em;   
+    left: 14.5em;
+}
+.body4>.cards>.card3>i{
+    font-size: 2.8em;
+    position: absolute;
+    top: 2.5em;   
+    left: 23.7em;
+}
+.body4>.cards h1{
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body4>.cards p{
+    font-family: arial;
+}
+.body5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38em;
+    gap: 3em;
+    background-color: white;
+}
+.body5>.one img{
+    width: 39em;
+    height: 35em;
+}
+.body5>.two{
+    position: relative;
+}
+.body5>.two>.icon{
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    width: 2em;
+    gap: 0.5em;
+    margin-top: 10px;
+    /* float: left; */
+}
+.body5>.two>.lines>ul>li{
+    list-style-type: none;
+}
+.body5>.two>.lines>ul>li:nth-child(1){
+    position: absolute;
+    top: 160px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(2){
+    position: absolute;
+    top: 200px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(3){
+    position: absolute;
+    top: 240px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(4){
+    position: absolute;
+    top: 280px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(5){
+    position: absolute;
+    top: 320px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(6){
+    position: absolute;
+    top: 360px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5>.two>.lines>ul>li:nth-child(7){
+    position: absolute;
+    top: 400px;
+    font-size: 19px;
+    left: 40px;
+}
+.body5 h1{
+    font-family: system-ui;
+    margin-bottom: 10px;
+}
+.body5 p{
+    font-size: 20px;
+}
+.body6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38em;
+    gap: 3em;   
+}
+.body6>.two>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.body6>.two>p{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+.body6>.one>img{
+    width: 280px;
+}
+.body6>.two img{
+    width: 150px;
+}
+.body6>.three>img{
+    width: 250px;
+}
+.body6>.three>p{
+    margin-left: 75px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.body7{
+    background-color: white;
+    /* margin-top: 15px; */
+}
+.body7>h1{
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.body7>.images{
+    /* background-color: aqua; */
+    width: 1200px;
+    margin-left: 100px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer{
+    background: linear-gradient(to right,black,rgb(87, 87, 87),black) ;
+    color: white;
+    padding-top: 50px;
+    position: relative;
+    font-family: sans-serif;
+    height: 400px;
+}
+footer>.main{
+    display: flex;
+    gap: 8em;
+    justify-content: center;
+}
+footer ul>li{
+    list-style-type: none;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+footer ul>li:hover{
+    text-decoration: underline;
+}
+footer>.main>.a1>img{
+    margin-bottom: 10px;
+}
+footer>.main>.a1>p{
+    font-size: 15px;
+}
+footer>.main h1{
+    margin-bottom: 18px;
+}
+footer>.main2{
+    display: flex;
+    justify-content: space-around;
+    gap: 330px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+footer>.main2 a{
+    border: 1px solid white;
+    padding: 18px 10px 10px 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+footer>.main2 a:hover{
+    border: 1px solid orangered;
+    color: orangered;
+}
+footer>.main2 i{
+    font-size: 25px;
+    transition: 0.8s;
+    /* margin-top: 3px; */
+}
+footer>.main2 i:hover{
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+.main3{
+    display: flex;
+    gap: 110px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
